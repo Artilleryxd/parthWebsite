@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Marquee from 'react-fast-marquee';
+import Carousel from '../components/Carousel';
 
 const Home = () => {
   return (
@@ -13,18 +14,7 @@ const Home = () => {
           </h1>
         </div>
       </Marquee>
-      <div className="video-container">
-        <video
-          width="100%" // Adjusts the video to be responsive
-          loop // Video will play on loop
-          autoPlay // Optional: Automatically start playing the video
-          muted // Mutes the video (important for auto-playing videos)
-          height="40%"
-        >
-          <source src="https://res.cloudinary.com/duv9rw1wg/video/upload/v1719250373/homePage/cpyhxtoihq5qsklymzag.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <Carousel/>
     </div>
   );
 }
