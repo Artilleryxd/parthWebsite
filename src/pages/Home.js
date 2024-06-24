@@ -1,11 +1,11 @@
-// Home.js
-
 import React from "react";
 import Nav from "../components/Nav";
 import InfiniteText from "../components/InfiniteText";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import EventsSection from "../components/EventsSection";
+import SIPBNSection from "../components/SIPBNSection";
 
 // Custom Next Arrow
 const NextArrow = ({ className, onClick }) => (
@@ -117,29 +117,7 @@ const Home = () => {
           {/* More images can be added here with the same structure */}
         </Slider>
 
-        {/* President's Message Section updated with modern styling */}
-        <section className="my-8 p-6 bg-white rounded-lg shadow-md">
-          <h3 className="text-2xl font-semibold mb-4">
-            Message from President
-          </h3>
-          <p className="text-lg text-gray-800 mb-4">
-            The purpose of Sydney Investors, Professionals and Business
-            Networking Group Incorporated (“SIPBN”) is to connect people and
-            business with the opportunity and entrepreneurship across different
-            parts of the world including Australia, US, India, UK, Europe,
-            China, Hong Kong, Israel, and the Middle East. At SIPBN, you will
-            find a platform to leverage your business or enterprise and have
-            access to the networks, information, and resources to expand your
-            business or investments into various markets at one place.
-          </p>
-          <p className="text-lg text-gray-800 mb-4">
-            We facilitate the engagement to and from Australia through our
-            extensive contacts in the government, trading, and the business
-            world. Our members and partners benefit from our networking events,
-            information sessions, trade delegations / visits, and receptions.
-          </p>
-          <h4 className="text-xl font-semibold">Raman Bhalla</h4>
-        </section>
+        <SIPBNSection />
 
         {/* Four Pillars Section */}
         <section className="my-8">
@@ -310,6 +288,8 @@ const Home = () => {
           </div>
         </section>
       </div>
+
+      <EventsSection />
     </div>
   );
 };
