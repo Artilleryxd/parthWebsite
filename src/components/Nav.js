@@ -28,7 +28,7 @@ const Nav = () => {
                 onMouseLeave={() => toggleDropdown("aboutUsDropdown")}
               >
                 <button className="text-black hover:text-blue-800">
-                  About Us <span>▼</span>
+                  About <span>▼</span>
                 </button>
                 <div
                   id="aboutUsDropdown"
