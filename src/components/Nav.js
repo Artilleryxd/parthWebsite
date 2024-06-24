@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { React, useState } from "react";
 
 const Nav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,7 +9,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white p-4 ">
+    <nav className="bg-white p-4">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div className="text-black">
@@ -232,63 +232,6 @@ const Nav = () => {
                 </div>
               </div>
             </div>
-            {/* New Options: Global Pitching and Membership */}
-            <div className="relative inline-block text-left">
-              <div
-                className="relative inline-block text-left"
-                onMouseEnter={() => toggleDropdown("globalPitchingDropdown")}
-                onMouseLeave={() => toggleDropdown("globalPitchingDropdown")}
-              >
-                <button className="text-black hover:text-blue-800">
-                  Global Pitching <span>▼</span>
-                </button>
-                <div
-                  id="globalPitchingDropdown"
-                  className="absolute hidden bg-white shadow-lg"
-                >
-                  <a
-                    href="/globalPitchingOption1"
-                    className="block px-4 py-2 text-sm hover:text-blue-800"
-                  >
-                    Option 1
-                  </a>
-                  <a
-                    href="/globalPitchingOption2"
-                    className="block px-4 py-2 text-sm hover:text-blue-800"
-                  >
-                    Option 2
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="relative inline-block text-left">
-              <div
-                className="relative inline-block text-left"
-                onMouseEnter={() => toggleDropdown("membershipDropdown")}
-                onMouseLeave={() => toggleDropdown("membershipDropdown")}
-              >
-                <button className="text-black hover:text-blue-800">
-                  Membership <span>▼</span>
-                </button>
-                <div
-                  id="membershipDropdown"
-                  className="absolute hidden bg-white shadow-lg"
-                >
-                  <a
-                    href="/membershipOption1"
-                    className="block px-4 py-2 text-sm hover:text-blue-800"
-                  >
-                    Option 1
-                  </a>
-                  <a
-                    href="/membershipOption2"
-                    className="block px-4 py-2 text-sm hover:text-blue-800"
-                  >
-                    Option 2
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
           <div className="md:hidden">
             <button
@@ -313,7 +256,6 @@ const Nav = () => {
           </div>
         </div>
       </div>
-      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden">
           <div className="flex flex-col space-y-4 p-4 bg-white shadow-lg">
@@ -520,57 +462,6 @@ const Nav = () => {
                   className="block px-4 py-2 text-sm hover:text-blue-800"
                 >
                   Upcoming Delegations
-                </a>
-              </div>
-            </div>
-            {/* Mobile Dropdowns for Global Pitching and Membership */}
-            <div className="relative inline-block text-left">
-              <button
-                onClick={() => toggleDropdown("mobileGlobalPitchingDropdown")}
-                className="text-black hover:text-blue-800"
-              >
-                Global Pitching <span>▼</span>
-              </button>
-              <div
-                id="mobileGlobalPitchingDropdown"
-                className="hidden bg-white shadow-lg"
-              >
-                <a
-                  href="/globalPitchingOption1"
-                  className="block px-4 py-2 text-sm hover:text-blue-800"
-                >
-                  Option 1
-                </a>
-                <a
-                  href="/globalPitchingOption2"
-                  className="block px-4 py-2 text-sm hover:text-blue-800"
-                >
-                  Option 2
-                </a>
-              </div>
-            </div>
-            <div className="relative inline-block text-left">
-              <button
-                onClick={() => toggleDropdown("mobileMembershipDropdown")}
-                className="text-black hover:text-blue-800"
-              >
-                Membership <span>▼</span>
-              </button>
-              <div
-                id="mobileMembershipDropdown"
-                className="hidden bg-white shadow-lg"
-              >
-                <a
-                  href="/membershipOption1"
-                  className="block px-4 py-2 text-sm hover:text-blue-800"
-                >
-                  Option 1
-                </a>
-                <a
-                  href="/membershipOption2"
-                  className="block px-4 py-2 text-sm hover:text-blue-800"
-                >
-                  Option 2
                 </a>
               </div>
             </div>
