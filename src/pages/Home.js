@@ -5,8 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import EventsSection from "../components/EventsSection";
-import SIPBNSection from "../components/SIPBNSection";
-
 // Custom Next Arrow
 const NextArrow = ({ className, onClick }) => (
   <div
@@ -116,12 +114,7 @@ const Home = () => {
           </div>
           {/* More images can be added here with the same structure */}
         </Slider>
-
-        <SIPBNSection />
-
         {/* Four Pillars Section */}
-        
-
         {/* Promo Block Section */}
         <section className="my-8">
           <div className="flex items-center justify-between bg-gray-800 text-white p-4 rounded shadow-lg">
@@ -142,10 +135,6 @@ const Home = () => {
             </a>
           </div>
         </section>
-
-        
-
-
         {/* Icon Blurbs Section */}
         <section className="my-8 grid grid-cols-2 gap-4">
           {/* Icon 1: Apply for Membership */}
@@ -208,35 +197,60 @@ const Home = () => {
             </a>
           </div>
         </section>
-
         <section className="my-8">
-        <h1 className='mx-8 mt-20 mb-10 font-semibold text-[25px]'>The Four Pillars That Empower SIPBN</h1>
+          <h1 className="mx-8 mt-20 mb-10 font-semibold text-[25px]">
+            The Four Pillars That Empower SIPBN
+          </h1>
 
-      <div className='mx-4 flex my-10'>
-        <div className="shadow-2xl flex-1 mx-3">
-            <p className='text-center font-semibold my-10'>Active Network Connectivity</p>
-            <p className='text-center my-10 px-6'>SIPBN membership grants you access via events and strategic introductions to an exclusive network of peers in business leaders, investors, mergers & acquisitions, private equity, family offices, government agencies and peer reviewed service providers.</p>
-        </div>
-        <div className="flex-1 shadow-2xl mx-3">
-            <p className='text-center font-semibold my-10'>Active Network Connectivity</p>
-            <p className='text-center  my-10 px-6'>SIPBN links members with businesses and reliable service providers to enable effective investment and trade outcomes. E.g: How to enter a country, the required etiquette, language services and market intelligence.</p>
-        </div>
-      </div>
+          <div className="mx-4 flex my-10">
+            <div className="shadow-2xl flex-1 mx-3">
+              <p className="text-center font-semibold my-10">
+                Active Network Connectivity
+              </p>
+              <p className="text-center my-10 px-6">
+                SIPBN membership grants you access via events and strategic
+                introductions to an exclusive network of peers in business
+                leaders, investors, mergers & acquisitions, private equity,
+                family offices, government agencies and peer reviewed service
+                providers.
+              </p>
+            </div>
+            <div className="flex-1 shadow-2xl mx-3">
+              <p className="text-center font-semibold my-10">
+                Active Network Connectivity
+              </p>
+              <p className="text-center  my-10 px-6">
+                SIPBN links members with businesses and reliable service
+                providers to enable effective investment and trade outcomes.
+                E.g: How to enter a country, the required etiquette, language
+                services and market intelligence.
+              </p>
+            </div>
+          </div>
 
-      <div className='mx-4 flex my-10'>
-        <div className="shadow-2xl flex-1 mx-3">
-            <p className='text-center font-semibold my-10'>Targeted Advocacy to Media and Government</p>
-            <p className='text-center my-10 px-6'>SIPBN champions initiatives and lobby for policy approaches that foster increased investment and trade opportunities for the betterment of all Australians.</p>
-        </div>
-        <div className="flex-1 shadow-2xl mx-3 ">
-            <p className='text-center font-semibold my-10'>Continuous High Value Deal flow</p>
-            <p className='text-center my-10 px-6'>The SIPBN platform provides members with the opportunity to exchange information on high value business, investment and trade deals.</p>
-        </div>
-        
-      </div>
+          <div className="mx-4 flex my-10">
+            <div className="shadow-2xl flex-1 mx-3">
+              <p className="text-center font-semibold my-10">
+                Targeted Advocacy to Media and Government
+              </p>
+              <p className="text-center my-10 px-6">
+                SIPBN champions initiatives and lobby for policy approaches that
+                foster increased investment and trade opportunities for the
+                betterment of all Australians.
+              </p>
+            </div>
+            <div className="flex-1 shadow-2xl mx-3 ">
+              <p className="text-center font-semibold my-10">
+                Continuous High Value Deal flow
+              </p>
+              <p className="text-center my-10 px-6">
+                The SIPBN platform provides members with the opportunity to
+                exchange information on high value business, investment and
+                trade deals.
+              </p>
+            </div>
+          </div>
         </section>
-
-
         {/* News Section */}
         <section className="my-8 bg-gray-100">
           <div className="container mx-auto">
