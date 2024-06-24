@@ -1,6 +1,14 @@
 import React, { useState } from "react";
+import React, { useState } from "react";
 
 const Nav = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleDropdown = (id) => {
+    const dropdown = document.getElementById(id);
+    dropdown.classList.toggle("hidden");
+  };
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleDropdown = (id) => {
@@ -471,5 +479,12 @@ const Nav = () => {
     </nav>
   );
 };
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+};
 
+export default Nav;
 export default Nav;
