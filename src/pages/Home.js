@@ -120,77 +120,7 @@ const Home = () => {
         <SIPBNSection />
 
         {/* Four Pillars Section */}
-        <section className="my-8">
-          <div className="bg-white p-8 rounded shadow">
-            <h2 className="header-title text-center">
-              The Four Pillars That empower SIPBN:
-            </h2>
-          </div>
-          <div className="flex flex-wrap -mx-4 mt-8">
-            {/* Pillar 1: Active Network Connectivity */}
-            <div className="w-full md:w-1/2 px-4 mb-8">
-              <div className="bg-white p-6 rounded shadow">
-                <div className="text-4xl text-center mb-4"></div>
-                <h4 className="text-lg font-bold text-center mb-2">
-                  Active Network Connectivity
-                </h4>
-                <p className="text-gray-800">
-                  SIPBN membership grants you access via events and strategic
-                  introductions to an exclusive network of peers in business
-                  leaders, investors, mergers & acquisitions, private equity,
-                  family offices, government agencies and peer reviewed service
-                  providers.
-                </p>
-              </div>
-            </div>
-
-            {/* Pillar 2: Continuous High Value Deal flow */}
-            <div className="w-full md:w-1/2 px-4 mb-8">
-              <div className="bg-white p-6 rounded shadow">
-                <div className="text-4xl text-center mb-4"></div>
-                <h4 className="text-lg font-bold text-center mb-2">
-                  Continuous High Value Deal flow
-                </h4>
-                <p className="text-gray-800">
-                  The SIPBN platform provides members with the opportunity to
-                  exchange information on high value business, investment and
-                  trade deals.
-                </p>
-              </div>
-            </div>
-
-            {/* Pillar 3: Cross Border Business Match Making and Trade Assistance */}
-            <div className="w-full md:w-1/2 px-4 mb-8">
-              <div className="bg-white p-6 rounded shadow">
-                <div className="text-4xl text-center mb-4"></div>
-                <h4 className="text-lg font-bold text-center mb-2">
-                  Cross Border Business Match Making and Trade Assistance
-                </h4>
-                <p className="text-gray-800">
-                  SIPBN links members with businesses and reliable service
-                  providers to enable effective investment and trade outcomes.
-                  E.g: How to enter a country, the required etiquette, language
-                  services and market intelligence.
-                </p>
-              </div>
-            </div>
-
-            {/* Pillar 4: Targeted Advocacy to Media and Government */}
-            <div className="w-full md:w-1/2 px-4 mb-8">
-              <div className="bg-white p-6 rounded shadow">
-                <div className="text-4xl text-center mb-4"></div>
-                <h4 className="text-lg font-bold text-center mb-2">
-                  Targeted Advocacy to Media and Government
-                </h4>
-                <p className="text-gray-800">
-                  SIPBN champions initiatives and lobby for policy approaches
-                  that foster increased investment and trade opportunities for
-                  the betterment of all Australians.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Promo Block Section */}
         <section className="my-8">
@@ -212,6 +142,9 @@ const Home = () => {
             </a>
           </div>
         </section>
+
+        
+
 
         {/* Icon Blurbs Section */}
         <section className="my-8 grid grid-cols-2 gap-4">
@@ -275,6 +208,34 @@ const Home = () => {
             </a>
           </div>
         </section>
+
+        <section className="my-8">
+        <h1 className='mx-8 mt-20 mb-10 font-semibold text-[25px]'>The Four Pillars That Empower SIPBN</h1>
+
+      <div className='mx-4 flex my-10'>
+        <div className="shadow-2xl flex-1 mx-3">
+            <p className='text-center font-semibold my-10'>Active Network Connectivity</p>
+            <p className='text-center my-10 px-6'>SIPBN membership grants you access via events and strategic introductions to an exclusive network of peers in business leaders, investors, mergers & acquisitions, private equity, family offices, government agencies and peer reviewed service providers.</p>
+        </div>
+        <div className="flex-1 shadow-2xl mx-3">
+            <p className='text-center font-semibold my-10'>Active Network Connectivity</p>
+            <p className='text-center  my-10 px-6'>SIPBN links members with businesses and reliable service providers to enable effective investment and trade outcomes. E.g: How to enter a country, the required etiquette, language services and market intelligence.</p>
+        </div>
+      </div>
+
+      <div className='mx-4 flex my-10'>
+        <div className="shadow-2xl flex-1 mx-3">
+            <p className='text-center font-semibold my-10'>Targeted Advocacy to Media and Government</p>
+            <p className='text-center my-10 px-6'>SIPBN champions initiatives and lobby for policy approaches that foster increased investment and trade opportunities for the betterment of all Australians.</p>
+        </div>
+        <div className="flex-1 shadow-2xl mx-3 ">
+            <p className='text-center font-semibold my-10'>Continuous High Value Deal flow</p>
+            <p className='text-center my-10 px-6'>The SIPBN platform provides members with the opportunity to exchange information on high value business, investment and trade deals.</p>
+        </div>
+        
+      </div>
+        </section>
+
 
         {/* News Section */}
         <section className="my-8 bg-gray-100">
